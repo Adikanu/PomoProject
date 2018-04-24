@@ -67,7 +67,7 @@ var counter = {
                 if (!self.started) return;
                 if (self.seconds == 0) {
                     if (self.minutes == 0) {
-                        alert("Time to rest");
+                        alert("Time Over");
                         self.timerComplete();
                         return;
                     }
