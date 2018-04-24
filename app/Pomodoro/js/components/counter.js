@@ -38,7 +38,6 @@ var counter = {
 		//function for starting pomodoro clock
         self.startWork = function() {
            self.resetVariables(25,0,true);
-           alert("Starting Pomodoro")
         };
 
 
@@ -55,7 +54,6 @@ var counter = {
 		//function for stopping and reseting the clock to initial value
 		self.stopTimer = function () {
             self.resetVariables(25, 0 ,false);
-            alert("Reseting Pomodoro");
         };
 
 
@@ -106,7 +104,6 @@ var counter = {
         
 		<div id="buttons">
 			<button id="work" type="button" ng-click="$ctrl.startWork();">Start</button>
-			<!--<input type="text" ng-model="$ctrl.minutes">-->
 			<button id="shortBreak" type="button" ng-click="$ctrl.startShortBreak();">Short Break</button>
 			<button id="longBreak" type="button" ng-click="$ctrl.startLongBreak();">Long Break</button>
 			<button id="stop" type="button" ng-click="$ctrl.stopTimer();">Reset</button>
